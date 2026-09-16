@@ -5,9 +5,19 @@ import { ExternalLink, Github } from 'lucide-react';
 import todoImg from '../assets/projects/todo-preview.jpg';
 import weatherImg from '../assets/projects/weather-preview.jpg';
 import portfolioImg from '../assets/projects/portfolio-preview.jpg';
+import bookingSysImg from '../assets/projects/bookingSys.jpg';
 
 export default function Projects() {
   const projects = [
+    {
+      title: 'Booking System',
+      description:
+        'A comprehensive full-featured booking and reservation management web application built with React. Features intuitive scheduling, real-time availability tracking, interactive reservation flows, and a sleek responsive UI.',
+      image: bookingSysImg,
+      liveUrl: 'https://yousefbookingsystem.netlify.app/',
+      githubUrl: 'https://github.com/yusefalsalman/Booking-System',
+      tags: ['React', 'JavaScript', 'Reservation System', 'Tailwind CSS', 'Responsive'],
+    },
     {
       title: 'To-Do App',
       description:
@@ -54,7 +64,7 @@ export default function Projects() {
         </motion.div>
 
         {/* Unified Project Grid (Tabs removed as requested) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
             <motion.div
               key={project.title}

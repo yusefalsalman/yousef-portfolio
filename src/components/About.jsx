@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Server, Database, Sparkles } from 'lucide-react';
+import { Code2, Server, Database, Rocket } from 'lucide-react';
 
 export default function About() {
   const highlights = [
@@ -19,11 +19,16 @@ export default function About() {
       title: "Database Design",
       desc: "Microsoft SQL Server, Entity Framework Core, schema modeling & queries",
     },
+    {
+      icon: <Rocket className="w-5 h-5 text-amber-500" />,
+      title: "Deployment",
+      desc: "Deploying and hosting web applications using Netlify & Render",
+    },
   ];
 
   return (
     <section id="about" className="py-16 md:py-24 relative">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
         {/* Section Pill Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -63,7 +68,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 text-left"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 text-left"
         >
           {highlights.map((item, idx) => (
             <div
