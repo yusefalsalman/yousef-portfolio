@@ -3,10 +3,25 @@ import { motion } from 'framer-motion';
 
 export default function Skills() {
   const skillsList = [
+    // Backend Technologies
     {
-      name: 'C++',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg',
+      name: 'C#',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
     },
+    {
+      name: '.NET Core',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg',
+    },
+    {
+      name: 'SQL Server',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg',
+    },
+    {
+      name: 'PostgreSQL',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg',
+    },
+
+    // Frontend Technologies
     {
       name: 'HTML5',
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
@@ -18,6 +33,10 @@ export default function Skills() {
     {
       name: 'JavaScript',
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+    },
+    {
+      name: 'TypeScript',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
     },
     {
       name: 'React',
@@ -32,13 +51,11 @@ export default function Skills() {
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
     },
     {
-      name: 'TypeScript',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
-    },
-    {
       name: 'Material UI',
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg',
     },
+
+    // Tools & Others
     {
       name: 'Git',
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
@@ -49,24 +66,16 @@ export default function Skills() {
       darkInvert: true,
     },
     {
-      name: 'C#',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
-    },
-    {
-      name: 'SQL Server',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg',
-    },
-    {
-      name: '.NET Core',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg',
-    },
-    {
       name: 'Swagger',
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg',
     },
     {
       name: 'Postman',
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg',
+    },
+    {
+      name: 'C++',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg',
     },
   ];
 
