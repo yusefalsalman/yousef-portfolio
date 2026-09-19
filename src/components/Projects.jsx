@@ -12,11 +12,11 @@ export default function Projects() {
     {
       title: 'Booking System',
       description:
-        'A comprehensive full-featured booking and reservation management web application built with React. Features intuitive scheduling, real-time availability tracking, interactive reservation flows, and a sleek responsive UI.',
+        'A comprehensive full-stack booking and reservation management web application built with React, Tailwind CSS, and ASP.NET Core with PostgreSQL. Features intuitive scheduling, real-time availability tracking, interactive reservation flows, and robust backend data persistence.',
       image: bookingSysImg,
       liveUrl: 'https://yousefbookingsystem.netlify.app/',
       githubUrl: 'https://github.com/yusefalsalman/Booking-System',
-      tags: ['React', 'JavaScript', 'Reservation System', 'Tailwind CSS', 'Responsive'],
+      tags: ['.NET Core', 'PostgreSQL', 'React', 'Tailwind CSS', 'Full Stack'],
     },
     {
       title: 'To-Do App',
