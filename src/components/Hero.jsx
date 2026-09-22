@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Instagram, Phone, Facebook, Eye, Download } from 'lucide-react';
 import avatarImg from '../assets/avatar.jpg';
+import resumePdf from '../assets/files/yousef-resume.pdf';
 
 export default function Hero() {
   const socialLinks = [
@@ -111,7 +112,9 @@ export default function Hero() {
               className="flex flex-wrap items-center justify-center lg:justify-start gap-4"
             >
               <a
-                href="#contact"
+                href={resumePdf}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
               >
                 <Eye className="w-4 h-4" />
@@ -119,10 +122,8 @@ export default function Hero() {
               </a>
 
               <a
-                href="#contact"
-                onClick={() => {
-                  alert("Please contact Yousef directly via the form below to receive the latest updated PDF resume!");
-                }}
+                href={resumePdf}
+                download="Yousef-Salman-Resume.pdf"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-200/80 dark:bg-[#131d33] border border-slate-300 dark:border-slate-700/80 hover:border-slate-400 dark:hover:border-slate-600 text-slate-800 dark:text-slate-200 text-sm font-semibold hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 shadow-sm"
               >
                 <Download className="w-4 h-4" />
