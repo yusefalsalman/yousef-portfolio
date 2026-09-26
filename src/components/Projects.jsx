@@ -2,48 +2,27 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 
-import todoImg from '../assets/projects/todo-preview.jpg';
-import weatherImg from '../assets/projects/weather-preview.jpg';
-import portfolioImg from '../assets/projects/portfolio-preview.jpg';
 import bookingSysImg from '../assets/projects/bookingSys.jpg';
-
+import NovaPay from '../assets/projects/NovaPay.jpg';
 export default function Projects() {
   const projects = [
     {
       title: 'Booking System',
       description:
-        'A comprehensive full-stack booking and reservation management web application built with React, Tailwind CSS, and ASP.NET Core with PostgreSQL. Features intuitive scheduling, real-time availability tracking, interactive reservation flows, and robust backend data persistence.',
+        'A full-stack FinTech web application built with React, Tailwind CSS, and ASP.NET Core with PostgreSQL. Features secure peer-to-peer transfers, double-entry financial ledgering, Stripe deposits, full Arabic/English bilingual support with RTL layout, and interactive AI financial insights.',
       image: bookingSysImg,
       liveUrl: 'https://yousefbookingsystem.netlify.app/',
       githubUrl: 'https://github.com/yusefalsalman/Booking-System',
       tags: ['.NET Core', 'PostgreSQL', 'React', 'Tailwind CSS', 'Full Stack'],
     },
     {
-      title: 'To-Do App',
+      title: 'NovaPay – Digital Banking Platform',
       description:
         'A sophisticated productivity app built with React.js. It features full CRUD (Create, Read, Update, Delete) functionality and demonstrates Virtual DOM efficiency, optimal Context API usage, and persistent data handling for a seamless user workflow.',
-      image: todoImg,
-      liveUrl: 'https://todoappyousefsalman.netlify.app/',
-      githubUrl: 'https://github.com/yusefalsalman/Todo-List-React',
-      tags: ['React', 'JavaScript', 'Context API', 'CRUD', 'LocalStorage'],
-    },
-    {
-      title: 'Weather App',
-      description:
-        'A robust React application utilizing Axios for optimized API calls. It implements the useEffect hook for lifecycle management and useState for handling global weather states. The app is structured with reusable components, ensuring a scalable and maintainable codebase.',
-      image: weatherImg,
-      liveUrl: 'https://weatherflyyousefsalman.netlify.app/',
-      githubUrl: 'https://github.com/yusefalsalman/Weatherify',
-      tags: ['React', 'Axios', 'REST API', 'Weather API', 'Responsive'],
-    },
-    {
-      title: 'Portfolio Website',
-      description:
-        'A professional, production-ready portfolio website built using React and bundled with Vite to showcase full-stack and frontend applications. The platform features an optimized styling architecture with Tailwind CSS, Framer Motion animations, dark/light theme switching, and EmailJS.',
-      image: portfolioImg,
-      liveUrl: '#',
-      githubUrl: 'https://github.com/yusefalsalman',
-      tags: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'EmailJS'],
+      image: NovaPay,
+      liveUrl: 'https://novapayyousefsalmanweb.netlify.app/',
+      githubUrl: 'https://github.com/yusefalsalman/NovaPay',
+      tags: ['.NET Core', 'PostgreSQL', 'React', 'Tailwind CSS', 'Full Stack'],
     },
   ];
 
