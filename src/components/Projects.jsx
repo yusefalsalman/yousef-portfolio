@@ -20,7 +20,7 @@ export default function Projects() {
       description:
         'A sophisticated productivity app built with React.js. It features full CRUD (Create, Read, Update, Delete) functionality and demonstrates Virtual DOM efficiency, optimal Context API usage, and persistent data handling for a seamless user workflow.',
       image: NovaPay,
-      liveUrl: 'https://novapayyousefsalmanweb.netlify.app/',
+      liveUrl: 'https://nova-pay-rho.vercel.app/',
       githubUrl: 'https://github.com/yusefalsalman/NovaPay',
       tags: ['.NET Core', 'PostgreSQL', 'React', 'Tailwind CSS', 'Full Stack'],
     },
