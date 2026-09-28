@@ -22,7 +22,7 @@ export default function About() {
     {
       icon: <Rocket className="w-5 h-5 text-amber-500" />,
       title: "Deployment",
-      desc: "Deploying and hosting web applications using Netlify & Render",
+      desc: "Deploying and hosting web applications using Netlify, vercel & Render",
     },
   ];
 
