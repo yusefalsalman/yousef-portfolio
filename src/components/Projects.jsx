@@ -7,23 +7,23 @@ import NovaPay from '../assets/projects/NovaPay.jpg';
 export default function Projects() {
   const projects = [
     {
-      title: 'Booking System',
-      description:
-        'A full-stack FinTech web application built with React, Tailwind CSS, and ASP.NET Core with PostgreSQL. Features secure peer-to-peer transfers, double-entry financial ledgering, Stripe deposits, full Arabic/English bilingual support with RTL layout, and interactive AI financial insights.',
-      image: bookingSysImg,
-      liveUrl: 'https://yousefbookingsystem.netlify.app/',
-      githubUrl: 'https://github.com/yusefalsalman/Booking-System',
-      tags: ['.NET Core', 'PostgreSQL', 'React', 'Tailwind CSS', 'Full Stack'],
-    },
-    {
       title: 'NovaPay – Digital Banking Platform',
       description:
-        'A sophisticated productivity app built with React.js. It features full CRUD (Create, Read, Update, Delete) functionality and demonstrates Virtual DOM efficiency, optimal Context API usage, and persistent data handling for a seamless user workflow.',
+        'A high-concurrency FinTech digital wallet built with ASP.NET Core Web API and PostgreSQL. Features secure peer-to-peer (P2P) transfers, an immutable double-entry bookkeeping ledger, and optimistic concurrency control to eliminate race conditions. Integrated with Stripe for wallet top-ups and JWT for secure authentication.',
       image: NovaPay,
       liveUrl: 'https://novapayyousefsalmanweb.netlify.app/',
       githubUrl: 'https://github.com/yusefalsalman/NovaPay',
-      tags: ['.NET Core', 'PostgreSQL', 'React', 'Tailwind CSS', 'Full Stack'],
+      tags: ['.NET Core', 'PostgreSQL', 'ASP.NET Core Web API', 'React', 'Tailwind CSS', 'Full Stack']
     },
+    {
+      title: 'Booking System',
+      description:
+        'A full-stack hospitality booking platform designed with ASP.NET Core and React. Implements real-time room availability tracking, reservation scheduling, dynamic pricing, and secure payment workflows, backed by optimized relational database queries and role-based access control.',
+      image: bookingSysImg,
+      liveUrl: 'https://yousefbookingsystem.netlify.app/',
+      githubUrl: 'https://github.com/yusefalsalman/Booking-System',
+      tags: ['.NET Core', 'SQL Server', 'React', 'Tailwind CSS', 'Full Stack'],
+    }
   ];
 
   return (
