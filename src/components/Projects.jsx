@@ -11,7 +11,7 @@ export default function Projects() {
       description:
         'A high-concurrency FinTech digital wallet built with ASP.NET Core Web API and PostgreSQL. Features secure peer-to-peer (P2P) transfers, an immutable double-entry bookkeeping ledger, and optimistic concurrency control to eliminate race conditions. Integrated with Stripe for wallet top-ups and JWT for secure authentication.',
       image: NovaPay,
-      liveUrl: 'https://novapayyousefsalmanweb.netlify.app/',
+      liveUrl: 'https://nova-pay-rho.vercel.app/',
       githubUrl: 'https://github.com/yusefalsalman/NovaPay',
       tags: ['.NET Core', 'PostgreSQL', 'ASP.NET Core Web API', 'React', 'Tailwind CSS', 'Full Stack']
     },
