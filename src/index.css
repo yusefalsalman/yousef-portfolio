@@ -63,3 +63,28 @@
   border-color: rgba(59, 130, 246, 0.4);
   box-shadow: 0 12px 30px -5px rgba(59, 130, 246, 0.15);
 }
+
+/* Skills marquee: track holds the list twice, so sliding -50% loops seamlessly */
+.skills-marquee {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+
+.skills-marquee-track {
+  animation: skills-marquee 40s linear infinite;
+}
+
+.skills-marquee:hover .skills-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes skills-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills-marquee-track {
+    animation-duration: 120s;
+  }
+}

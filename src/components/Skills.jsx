@@ -79,26 +79,6 @@ export default function Skills() {
     },
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.05,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, scale: 0.8, y: 15 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      transition: { duration: 0.4, ease: 'easeOut' },
-    },
-  };
-
   return (
     <section id="skills" className="py-16 md:py-24 relative">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
@@ -114,47 +94,45 @@ export default function Skills() {
             Skills
           </span>
         </motion.div>
+      </div>
 
-        {/* Skills Icon Cloud / Grid matching photo */}
-        {/* Skills Grid / Cloud perfectly centered and aligned */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-4 sm:grid-cols-4 md:flex md:flex-wrap items-center justify-center justify-items-center gap-y-7 gap-x-2 sm:gap-6 md:gap-8 max-w-sm sm:max-w-md md:max-w-3xl lg:max-w-4xl mx-auto"
-        >
-          {skillsList.map((skill) => (
-            <motion.div
-              key={skill.name}
-              variants={itemVariants}
-              whileHover={{ scale: 1.18, y: -6 }}
-              whileTap={{ scale: 0.95 }}
-              className="group relative flex flex-col items-center justify-center p-2 rounded-2xl transition-all duration-300 cursor-pointer w-20 sm:w-22 md:w-24 text-center"
+      {/* Infinite horizontal marquee: list is rendered twice and the track slides by -50% */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="skills-marquee relative max-w-6xl mx-auto overflow-hidden"
+      >
+        <div className="skills-marquee-track flex w-max">
+          {[...skillsList, ...skillsList].map((skill, idx) => (
+            <div
+              key={`${skill.name}-${idx}`}
+              aria-hidden={idx >= skillsList.length}
+              className="group relative flex flex-col items-center justify-center p-2 mx-3 sm:mx-5 rounded-2xl transition-transform duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer w-20 sm:w-24 shrink-0 text-center"
             >
               {/* Subtle background glow circle on hover */}
               <div className="absolute inset-0 rounded-2xl bg-blue-500/0 group-hover:bg-blue-500/10 dark:group-hover:bg-blue-500/20 blur-md transition-all duration-300 -z-10" />
 
               {/* Icon Container */}
-              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center p-1 transition-transform duration-300">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center p-1">
                 <img
                   src={skill.icon}
                   alt={skill.name}
-                  loading="lazy"
                   className={`w-full h-full object-contain filter drop-shadow-sm group-hover:drop-shadow-lg transition-all duration-300 ${
                     skill.darkInvert ? 'dark:brightness-0 dark:invert' : ''
                   }`}
                 />
               </div>
 
-              {/* Tooltip Label */}
-              <span className="mt-2 text-[11px] sm:text-xs font-semibold text-slate-700 dark:text-slate-300 opacity-85 group-hover:opacity-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors leading-tight text-center">
+              {/* Label */}
+              <span className="mt-2 text-[11px] sm:text-xs font-semibold text-slate-700 dark:text-slate-300 opacity-85 group-hover:opacity-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors leading-tight text-center whitespace-nowrap">
                 {skill.name}
               </span>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
 
       {/* Subtle Divider Line */}
       <div className="max-w-4xl mx-auto mt-20 px-6">

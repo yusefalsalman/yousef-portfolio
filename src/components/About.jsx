@@ -5,19 +5,19 @@ import { Code2, Server, Database, Rocket } from 'lucide-react';
 export default function About() {
   const highlights = [
     {
-      icon: <Code2 className="w-5 h-5 text-blue-500" />,
-      title: "Frontend Engineering",
-      desc: "React.js, Tailwind CSS, modern state management & responsive UI",
-    },
-    {
       icon: <Server className="w-5 h-5 text-emerald-500" />,
       title: "Backend Architecture",
-      desc: "ASP.NET Core Web APIs, C#, Clean Architecture & Swagger documentation",
+      desc: "ASP.NET Core Web APIs, C#, Clean Architecture, authentication & Swagger documentation",
     },
     {
       icon: <Database className="w-5 h-5 text-purple-500" />,
       title: "Database Design",
-      desc: "Microsoft SQL Server, Entity Framework Core, schema modeling & queries",
+      desc: "SQL Server & PostgreSQL, Entity Framework Core, schema modeling & query optimization",
+    },
+    {
+      icon: <Code2 className="w-5 h-5 text-blue-500" />,
+      title: "Frontend Integration",
+      desc: "React.js & Tailwind CSS interfaces that consume and showcase the APIs I build",
     },
     {
       icon: <Rocket className="w-5 h-5 text-amber-500" />,
@@ -51,14 +51,15 @@ export default function About() {
           className="relative"
         >
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg md:text-xl leading-relaxed font-normal text-center max-w-3xl mx-auto">
-            I am a software developer dedicated to building end to end, high performance web
-            applications. Bridging modern user interfaces with robust backend architecture, I
-            specialize in <span className="font-semibold text-blue-600 dark:text-blue-400">React.js</span>,{' '}
-            <span className="font-semibold text-cyan-600 dark:text-cyan-400">Tailwind CSS</span>, and{' '}
-            <span className="font-semibold text-purple-600 dark:text-purple-400">ASP.NET Core Web APIs</span>.
-            From designing intuitive, pixel perfect frontend experiences to engineering clean
-            database structures and RESTful services with <span className="font-semibold text-red-500">SQL Server</span>,
-            I focus on delivering scalable, reliable software that solves real problems.
+            I am a full-stack developer with a strong focus on the backend. I specialize in{' '}
+            <span className="font-semibold text-purple-600 dark:text-purple-400">ASP.NET Core Web APIs</span> and{' '}
+            <span className="font-semibold text-emerald-600 dark:text-emerald-400">C#</span>, designing clean
+            architecture, secure RESTful services, and well-structured databases with{' '}
+            <span className="font-semibold text-red-500">SQL Server</span> and{' '}
+            <span className="font-semibold text-sky-600 dark:text-sky-400">PostgreSQL</span>.
+            On top of that, I build responsive interfaces with{' '}
+            <span className="font-semibold text-blue-600 dark:text-blue-400">React.js</span> to deliver
+            complete, scalable, and reliable applications that solve real problems.
           </p>
         </motion.div>
 

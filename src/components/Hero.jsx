@@ -15,19 +15,19 @@ export default function Hero() {
     {
       name: 'LinkedIn',
       icon: <Linkedin className="w-5 h-5" />,
-      href: 'https://www.linkedin.com/in/yusefalsalman',
+      href: 'https://www.linkedin.com/in/yousef-salman-27b19a33a',
       color: 'hover:text-blue-400 hover:border-blue-400',
     },
     {
       name: 'Instagram',
       icon: <Instagram className="w-5 h-5" />,
-      href: 'https://instagram.com',
+      href: 'https://www.instagram.com/yusef.alsalman/?__pwa=1#',
       color: 'hover:text-pink-500 hover:border-pink-500',
     },
     {
       name: 'WhatsApp',
       icon: <Phone className="w-5 h-5" />,
-      href: 'https://wa.me/?text=Hello%20Yousef',
+      href: 'https://wa.me/962799882249?text=Hello%20Yousef',
       color: 'hover:text-emerald-500 hover:border-emerald-500',
     },
     {
@@ -46,7 +46,7 @@ export default function Hero() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Left Column: Info & Actions */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -69,8 +69,8 @@ export default function Hero() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4 tracking-tight"
             >
-              Full-Stack Developer | <br className="hidden sm:inline" />
-              <span className="text-blue-600 dark:text-blue-400">ASP.NET Core &amp; React</span>
+              Backend-Focused Full-Stack Developer <br className="hidden sm:inline" />
+              <span className="text-blue-600 dark:text-blue-400">ASP.NET Core &amp; C#</span>
             </motion.h2>
 
             <motion.p
@@ -79,8 +79,9 @@ export default function Hero() {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="text-slate-600 dark:text-slate-400 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8"
             >
-              Hi, I'm Yousef Salman, a Full-Stack Developer specializing in building scalable,
-              end-to-end web applications with React and ASP.NET Core.
+              Hi, I'm Yousef Salman, a Full-Stack Developer specializing in backend engineering:
+              building scalable APIs, clean architecture, and solid databases with ASP.NET Core,
+              then delivering them end to end with React.
             </motion.p>
 
             {/* Social Links */}
