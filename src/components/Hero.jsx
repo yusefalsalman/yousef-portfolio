@@ -1,43 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Instagram, Phone, Facebook, Eye, Download } from 'lucide-react';
+import { Eye, Download } from 'lucide-react';
+import { SOCIAL_LINKS } from '../config/socialLinks';
 import avatarImg from '../assets/avatar.jpg';
 import resumePdf from '../assets/files/yousef-resume.pdf';
 
 export default function Hero() {
-  const socialLinks = [
-    {
-      name: 'GitHub',
-      icon: <Github className="w-5 h-5" />,
-      href: 'https://github.com/yusefalsalman',
-      color: 'hover:text-blue-500 hover:border-blue-500',
-    },
-    {
-      name: 'LinkedIn',
-      icon: <Linkedin className="w-5 h-5" />,
-      href: 'https://www.linkedin.com/in/yousef-salman-27b19a33a',
-      color: 'hover:text-blue-400 hover:border-blue-400',
-    },
-    {
-      name: 'Instagram',
-      icon: <Instagram className="w-5 h-5" />,
-      href: 'https://www.instagram.com/yusef.alsalman/?__pwa=1#',
-      color: 'hover:text-pink-500 hover:border-pink-500',
-    },
-    {
-      name: 'WhatsApp',
-      icon: <Phone className="w-5 h-5" />,
-      href: 'https://wa.me/962799882249?text=Hello%20Yousef',
-      color: 'hover:text-emerald-500 hover:border-emerald-500',
-    },
-    {
-      name: 'Facebook',
-      icon: <Facebook className="w-5 h-5" />,
-      href: 'https://web.facebook.com/yousef.salman.96586',
-      color: 'hover:text-blue-600 hover:border-blue-600',
-    },
-  ];
-
   return (
     <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
       {/* Background ambient glow circles */}
@@ -91,7 +59,7 @@ export default function Hero() {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="flex items-center justify-center lg:justify-start gap-4 mb-8"
             >
-              {socialLinks.map((social) => (
+              {SOCIAL_LINKS.map((social) => (
                 <a
                   key={social.name}
                   href={social.href}
