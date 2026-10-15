@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Eye, Download } from 'lucide-react';
 import { SOCIAL_LINKS } from '../config/socialLinks';
 import avatarImg from '../assets/avatar.jpg';
-import resumePdf from '../assets/files/yousef-resume.pdf';
+import resumePdf from '../assets/files/yousef-fullstack-resume.pdf';
 
 export default function Hero() {
   return (
