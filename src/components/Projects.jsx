@@ -4,8 +4,19 @@ import { ExternalLink, Github } from 'lucide-react';
 
 import bookingSysImg from '../assets/projects/bookingSys.jpg';
 import NovaPay from '../assets/projects/NovaPay.jpg';
+import wms from '../assets/projects/wms.jpg';
+
 export default function Projects() {
   const projects = [
+    {
+      title: 'Warehouse Management System',
+      description:
+        'A full-stack warehouse management platform built with ASP.NET Core and React. Features product and warehouse management, inventory tracking, transactional stock transfers, audit trails, and automated low-stock alerts. Includes role-based JWT authentication, reporting dashboards, and a responsive Arabic/English interface with RTL support.',
+      image: wms,
+      liveUrl: 'https://wms-solution.vercel.app',
+      githubUrl: 'https://github.com/yusefalsalman/WMS_Solution',
+      tags: ['ASP.NET Core Web API', 'PostgreSQL', 'Entity Framework Core', 'Dapper', 'React', 'TypeScript', 'Tailwind CSS', 'JWT', 'Docker', 'Full Stack']
+    },
     {
       title: 'NovaPay – Digital Banking Platform',
       description:
