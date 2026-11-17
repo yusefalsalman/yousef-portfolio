@@ -35,10 +35,11 @@ export default function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4 tracking-tight"
+              className="text-3xl sm:text-4xl font-extrabold mb-4 tracking-tight leading-tight text-blue-700 dark:text-blue-300"
             >
-              Backend-Focused Full-Stack Developer <br className="hidden sm:inline" />
-              <span className="text-blue-600 dark:text-blue-400">ASP.NET Core &amp; C#</span>
+              <span className="inline-block pb-1 bg-gradient-to-r from-blue-700 via-indigo-600 to-violet-700 dark:from-blue-300 dark:via-indigo-300 dark:to-violet-300 bg-clip-text text-transparent">
+                .NET Backend Developer
+              </span>
             </motion.h2>
 
             <motion.p
