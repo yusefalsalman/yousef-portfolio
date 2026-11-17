@@ -48,9 +48,9 @@ export default function Hero() {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="text-slate-600 dark:text-slate-400 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8"
             >
-              Hi, I'm Yousef Salman, a Full-Stack Developer specializing in backend engineering:
-              building scalable APIs, clean architecture, and solid databases with ASP.NET Core,
-              then delivering them end to end with React.
+              Hi, I'm Yousef Salman, a backend-focused developer specializing in ASP.NET Core, C#,
+              RESTful APIs, and relational databases (PostgreSQL and SQL Server), with a
+              foundational understanding of frontend integration.
             </motion.p>
 
             {/* Social Links */}

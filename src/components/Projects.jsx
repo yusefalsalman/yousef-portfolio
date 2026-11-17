@@ -11,29 +11,29 @@ export default function Projects() {
     {
       title: 'Warehouse Management System',
       description:
-        'A full-stack warehouse management platform built with ASP.NET Core and React. Features product and warehouse management, inventory tracking, transactional stock transfers, audit trails, and automated low-stock alerts. Includes role-based JWT authentication, reporting dashboards, and a responsive Arabic/English interface with RTL support.',
+        'An ASP.NET Core Web API for warehouse operations on PostgreSQL. Stock transfers run as ACID transactions, are protected against concurrent updates, and are written to an audit trail. Role-based JWT authentication secures the API, which a React client uses for inventory and reporting.',
       image: wms,
       liveUrl: 'https://wms-solution.vercel.app',
       githubUrl: 'https://github.com/yusefalsalman/WMS_Solution',
-      tags: ['ASP.NET Core Web API', 'PostgreSQL', 'Entity Framework Core', 'Dapper', 'React', 'TypeScript', 'Tailwind CSS', 'JWT', 'Docker', 'Full Stack']
+      tags: ['ASP.NET Core', 'C#', 'PostgreSQL', 'Entity Framework Core', 'JWT', 'ACID Transactions']
     },
     {
       title: 'NovaPay – Digital Banking Platform',
       description:
-        'A high-concurrency FinTech digital wallet built with ASP.NET Core Web API and PostgreSQL. Features secure peer-to-peer (P2P) transfers, an immutable double-entry bookkeeping ledger, and optimistic concurrency control to eliminate race conditions. Integrated with Stripe for wallet top-ups and JWT for secure authentication.',
+        'A digital wallet API built with ASP.NET Core and PostgreSQL. Peer-to-peer transfers post to an immutable double-entry ledger inside ACID transactions, with optimistic concurrency control to prevent race conditions. JWT secures account access, and Stripe handles wallet top-ups.',
       image: NovaPay,
       liveUrl: 'https://nova-pay-rho.vercel.app/',
       githubUrl: 'https://github.com/yusefalsalman/NovaPay',
-      tags: ['.NET Core', 'PostgreSQL', 'ASP.NET Core Web API', 'React', 'Tailwind CSS', 'Full Stack']
+      tags: ['ASP.NET Core', 'C#', 'PostgreSQL', 'JWT', 'ACID Transactions', 'Concurrency']
     },
     {
       title: 'Booking System',
       description:
-        'A full-stack hospitality booking platform designed with ASP.NET Core and React. Implements real-time room availability tracking, reservation scheduling, dynamic pricing, and secure payment workflows, backed by optimized relational database queries and role-based access control.',
+        'A hospitality booking API built with ASP.NET Core and SQL Server. It tracks room availability, reservations, and pricing through relational queries, and protects booking workflows with role-based access control.',
       image: bookingSysImg,
       liveUrl: 'https://yousefbookingsystem.netlify.app/',
       githubUrl: 'https://github.com/yusefalsalman/Booking-System',
-      tags: ['.NET Core', 'SQL Server', 'React', 'Tailwind CSS', 'Full Stack'],
+      tags: ['ASP.NET Core', 'C#', 'SQL Server', 'REST API'],
     }
   ];
 
@@ -74,38 +74,6 @@ export default function Projects() {
                   className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
 
-                {/* Dark Hover Overlay with Action Buttons */}
-                <div className="absolute inset-0 bg-slate-950/50 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
-                  {project.liveUrl !== '#' ? (
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3.5 py-2 rounded-full bg-blue-600 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg hover:bg-blue-700 transition"
-                    >
-                      <ExternalLink className="w-3.5 h-3.5" /> Live Demo
-                    </a>
-                  ) : (
-                    <a
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                      }}
-                      className="px-3.5 py-2 rounded-full bg-blue-600 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg hover:bg-blue-700 transition"
-                    >
-                      <ExternalLink className="w-3.5 h-3.5" /> Current Site
-                    </a>
-                  )}
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3.5 py-2 rounded-full bg-slate-900/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg hover:bg-black transition border border-slate-700"
-                  >
-                    <Github className="w-3.5 h-3.5" /> Code
-                  </a>
-                </div>
               </div>
 
               {/* Card Body */}
@@ -133,40 +101,24 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  {/* Card Action Links Footer */}
-                  <div className="pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
-                    {project.liveUrl !== '#' ? (
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition"
-                      >
-                        <ExternalLink className="w-3.5 h-3.5" />
-                        <span>View Project</span>
-                      </a>
-                    ) : (
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          window.scrollTo({ top: 0, behavior: 'smooth' });
-                        }}
-                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition"
-                      >
-                        <ExternalLink className="w-3.5 h-3.5" />
-                        <span>View Project</span>
-                      </a>
-                    )}
-
+                  <div className="pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-3">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold shadow-md shadow-blue-500/20 transition"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      Live Demo
+                    </a>
                     <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="GitHub Repository"
-                      className="p-1.5 rounded-lg text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition hover:scale-110"
+                      className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-black text-white text-sm font-semibold border border-slate-700 transition"
                     >
                       <Github className="w-4 h-4" />
+                      GitHub
                     </a>
                   </div>
                 </div>

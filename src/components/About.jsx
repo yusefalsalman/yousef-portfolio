@@ -17,7 +17,7 @@ export default function About() {
     {
       icon: <Code2 className="w-5 h-5 text-blue-500" />,
       title: "Frontend Integration",
-      desc: "React.js & Tailwind CSS interfaces that consume and showcase the APIs I build",
+      desc: "Foundational React knowledge used to consume and present the APIs I build",
     },
     {
       icon: <Rocket className="w-5 h-5 text-amber-500" />,
@@ -51,15 +51,14 @@ export default function About() {
           className="relative"
         >
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg md:text-xl leading-relaxed font-normal text-center max-w-3xl mx-auto">
-            I am a full-stack developer with a strong focus on the backend. I specialize in{' '}
-            <span className="font-semibold text-purple-600 dark:text-purple-400">ASP.NET Core Web APIs</span> and{' '}
-            <span className="font-semibold text-emerald-600 dark:text-emerald-400">C#</span>, designing clean
-            architecture, secure RESTful services, and well-structured databases with{' '}
+            I am a backend engineer specializing in{' '}
+            <span className="font-semibold text-purple-600 dark:text-purple-400">ASP.NET Core</span> and{' '}
+            <span className="font-semibold text-emerald-600 dark:text-emerald-400">C#</span>. I design
+            RESTful APIs, clean architecture, and relational databases with{' '}
             <span className="font-semibold text-red-500">SQL Server</span> and{' '}
             <span className="font-semibold text-sky-600 dark:text-sky-400">PostgreSQL</span>.
-            On top of that, I build responsive interfaces with{' '}
-            <span className="font-semibold text-blue-600 dark:text-blue-400">React.js</span> to deliver
-            complete, scalable, and reliable applications that solve real problems.
+            I also have a foundational understanding of frontend integration, enough to connect
+            the services I build to a client.
           </p>
         </motion.div>
 
