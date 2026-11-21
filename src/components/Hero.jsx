@@ -35,10 +35,11 @@ export default function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4 tracking-tight"
+              className="text-2xl sm:text-3xl font-bold mb-4 tracking-tight"
             >
-              Backend-Focused Full-Stack Developer <br className="hidden sm:inline" />
-              <span className="text-blue-600 dark:text-blue-400">ASP.NET Core &amp; C#</span>
+              <span className="bg-gradient-to-r from-cyan-500 via-blue-600 to-fuchsia-500 dark:from-cyan-300 dark:via-blue-400 dark:to-fuchsia-400 bg-clip-text text-transparent">
+                Full-Stack .NET &amp; React Developer
+              </span>
             </motion.h2>
 
             <motion.p
@@ -47,9 +48,9 @@ export default function Hero() {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="text-slate-600 dark:text-slate-400 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8"
             >
-              Hi, I'm Yousef Salman, a backend-focused developer specializing in ASP.NET Core, C#,
-              RESTful APIs, and relational databases (PostgreSQL and SQL Server), with a
-              foundational understanding of frontend integration.
+              Hi, I'm Yousef Salman, a full stack developer building web applications with ASP.NET Core,
+              C#, and React. I specialize in creating polished, responsive front ends and connecting
+              them to reliable APIs and relational databases.
             </motion.p>
 
             {/* Social Links */}

@@ -16,8 +16,8 @@ export default function About() {
     },
     {
       icon: <Code2 className="w-5 h-5 text-blue-500" />,
-      title: "Frontend Integration",
-      desc: "Foundational React knowledge used to consume and present the APIs I build",
+      title: "Frontend Development",
+      desc: "Building responsive, interactive user experiences with React, JavaScript, and modern CSS",
     },
     {
       icon: <Rocket className="w-5 h-5 text-amber-500" />,
@@ -51,14 +51,15 @@ export default function About() {
           className="relative"
         >
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg md:text-xl leading-relaxed font-normal text-center max-w-3xl mx-auto">
-            I am a backend engineer specializing in{' '}
+            I am a full stack developer specializing in{' '}
             <span className="font-semibold text-purple-600 dark:text-purple-400">ASP.NET Core</span> and{' '}
             <span className="font-semibold text-emerald-600 dark:text-emerald-400">C#</span>. I design
             RESTful APIs, clean architecture, and relational databases with{' '}
             <span className="font-semibold text-red-500">SQL Server</span> and{' '}
-            <span className="font-semibold text-sky-600 dark:text-sky-400">PostgreSQL</span>.
-            I also have a foundational understanding of frontend integration, enough to connect
-            the services I build to a client.
+            <span className="font-semibold text-sky-600 dark:text-sky-400">PostgreSQL</span>, and building
+            responsive, accessible user interfaces with{' '}
+            <span className="font-semibold text-cyan-600 dark:text-cyan-400">React</span>. With a front end
+            focus, I connect polished user experiences to reliable backend services.
           </p>
         </motion.div>
 

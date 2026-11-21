@@ -159,7 +159,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
                 <div>
                   <span className="text-2xl font-black tracking-wider text-blue-600 dark:text-blue-500">YS</span>
                   <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400 mt-0.5">
-                    Backend Developer
+                    Full-Stack Developer
                   </p>
                 </div>
                 <button

@@ -131,10 +131,10 @@ export default function Skills() {
         <div className="mt-14 pt-10 border-t border-slate-200/80 dark:border-slate-800">
           <div className="text-center mb-6">
             <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-              Frontend integration
+              Frontend development
             </h3>
             <p className="mt-2 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-              Foundational skills used to consume and present the APIs I build.
+              React, JavaScript, and modern web technologies for building responsive, user-focused interfaces.
             </p>
           </div>
 
