@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+
 export default function App() {
   const [darkMode, setDarkMode] = useState(() => {
     // Check localStorage or default to light as base
